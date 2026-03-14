@@ -1,0 +1,133 @@
+# SECRETS — never commit these under any circumstances
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+service-account*.json
+*-service-account.json
+gcp-credentials.json
+credentials.json
+secrets.json
+secret.json
+.secret
+terraform.tfvars
+terraform.tfvars.json
+*.tfvars
+*.tfvars.json
+
+# ─────────────────────────────────────────────
+# PYTHON (backend + vscode-helper)
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+venv/
+.venv/
+env/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+*.egg
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# ─────────────────────────────────────────────
+# NODE / NEXT.JS (frontend)
+# ─────────────────────────────────────────────
+node_modules/
+.next/
+out/
+.vercel/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.pnp.*
+*.tsbuildinfo
+next-env.d.ts
+
+# ─────────────────────────────────────────────
+# TERRAFORM (infra)
+# ─────────────────────────────────────────────
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.backup
+tfplan
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ─────────────────────────────────────────────
+# GOOGLE CLOUD
+# ─────────────────────────────────────────────
+.gcloudignore
+gcloud-service-key.json
+application_default_credentials.json
+
+# ─────────────────────────────────────────────
+# OS
+# ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ─────────────────────────────────────────────
+# EDITORS
+# ─────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-workspace
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.history/
+
+# ─────────────────────────────────────────────
+# LOGS & TEMP
+# ─────────────────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+
+# ─────────────────────────────────────────────
+# LOCAL DEV OVERRIDES
+# ─────────────────────────────────────────────
+docker-compose.override.yml
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
